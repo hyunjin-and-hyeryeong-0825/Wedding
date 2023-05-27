@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>HYUN JIN AND HYE REONG</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body class="landing is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<!-- <header id="header" class="alt">
+						<h1><a href="index.html">Spectral</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header> -->
+
+		<!-- Banner -->
+		<section id="banner">
+			<span class="test">
+				<div class="inner">
+					<h2>HYUN JIN <br> ❤<br /> HYE REONG</h2>
+					<p class="padding">25 / 08 / 2023 11AM
+					</p>
+					<p>SYDENY SAE SOON PRESBYTERIAN CHURCH</p>
+					<p>DAVIES HALL</p>
+
+				</div>
+				<a href="#one" class="more scrolly"></a>
+			</span>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<p>하나님의 사랑 안에서 두 사람이 만나</p>
+					<p>이제 하나의 가정을 이룹니다.</p>
+					<p>같은 곳으로 바라보며 함께 걸어가는 부부로서의 첫걸음,</p>
+					<p>이 기쁜 자리에 부디 함께하셔서 축해주시기를 바랍니다.</p>
+
+				</header>
+				<ul class="actions fit">
+					<li><a href="#two" class="button fit small scrolly">RSVP</a></li>
+					<li><a href="#four" class="button fit small scrolly">GALLERY</a></li>
+					<li><a href="#three" class="button fit small scrolly">MAP</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper special style2">
+			<div class="inner">
+				<header class="major">
+					<h2>RSVP</h2>
+				</header>
+				<form id="RSVPform">
+					<div class="content-body">
+						<label for="name">NAME / 이름 (영어로 풀네임 부탁드립니다)*</label>
+						<input id="name" name="Name" type="text" placeholder="Name" required="">
+					</div>
+					<div class="content-body">
+						<label for="contact">CONTACT NUMBER / 전화번호 *</label>
+						<input id="contact" name="Contact" type="tel" placeholder="0400000000" pattern="[0-9]{10}"
+							required="">
+					</div>
+					<div class="content-body">
+						<label for="contact">EMAIL / 이메일</label>
+						<input id="contact" type="email" name="Email">
+					</div>
+					<div class="content-body">
+						<label>참석여부 *</label>
+						<input type="radio" id="RSVP_Yes" class="RSVP_Radio" name="RSVP" value="Yes" checked="checked">
+						<label for="RSVP_Yes">Yes</label><br>
+						<input type="radio" id="RSVP_No" class="RSVP_Radio" name="RSVP" value="No">
+						<label for="RSVP_No">No</label><br>
+					</div>
+
+					<div class="content-body" id="optional_others">
+
+						<label>함께 오시는 분</label>
+						<input type="radio" id="Others_Yes" name="Optional_Others" class="Others_Radio" value="Yes">
+						<label for="Others_Yes">Yes</label><br>
+						<input type="radio" id="Others_No" class="Others_Radio" name="Optional_Others" value="No"
+							checked="">
+						<label for="Others_No">No</label><br>
+						<div id="others_list" class="content-body" style="display: none;">
+							<div class="content-body">
+								<label>함께 오시는 분 명단 (영어 풀 네임 부탁드립니다)</label>
+								<label class="notice">*모두를 부르고 싶었으나, 저희가 한정된 사람들만 부를수 있었음에 양해를 구합니다.<br>초대된 +1만 적어주세요.
+									감사합니다.</label>
+								<label for="others"> </label>
+								<textarea rows="4" cols="50" name="Others" form="RSVPform"></textarea>
+							</div>
+							<div class="content-body">
+								<label for="quantity">총 인원수(작성자 포함)</label>
+								<input type="number" id="quantity" name="Numbers" min="0" max="10">
+							</div>
+						</div>
+						<br>
+						<div>
+							<div class="content-body">
+								<label>음식 알러지 여부 (있으시다면 아래에 적어주세요)</label>
+								<input type="text" id="guest_allergy" name="allergy">
+							</div>
+						</div>
+					</div>
+					<label>* IS MANDATORY FIELD / * 표시는 필수 입력사항입니다</label>
+					<div class="content-body">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- Four -->
+		<section id="four" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Gallery / 갤러리</h2>
+				</header>
+				<section>
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_1.jpg" data-src="images/wedding_1.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_2.jpg" data-src="images/wedding_2.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_3.jpg" data-src="images/wedding_3.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_4.jpg" data-src="images/wedding_4.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_5.jpg" data-src="images/wedding_5.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_6.jpg" data-src="images/wedding_6.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_7.jpg" data-src="images/wedding_7.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_8.jpg" data-src="images/wedding_8.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_9.jpg" data-src="images/wedding_9.jpg" alt="" /></span>
+							</div>
+							<div class="col-4"><span class="image fit"><img class="photo_cover"
+										src="images/wedding_10.jpg" data-src="images/wedding_10.jpg" alt="" /></span>
+							</div>
+						</div>
+					</div>
+
+					</script>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style2 special">
+			<div class="inner">
+				<header class="major">
+					<h2>MAP / 오시는 길</h2>
+					<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+						fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+				</header>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.4775945754486!2d151.01217017545903!3d-33.774162973262925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a3c6877e38c9%3A0x2df198c3b911572d!2sSydney%20Sae%20Soon%20Presbyterian%20Church%2C%20Saesoon%20Korean%20School!5e0!3m2!1sen!2sau!4v1684850962706!5m2!1sen!2sau"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>HYUN JIN</li>
+				<li>HYE REONG</li>
+				<li>Version 1.0</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
