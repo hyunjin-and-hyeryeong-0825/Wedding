@@ -2285,6 +2285,25 @@ input[type="radio"]+label:before {
 	object-fit: contain;
 }
 
+.googleMap_iframe{
+	width: 100%;
+	height: 30em;
+}
+
+#bus-direction{
+	border: 1px solid white;
+}
+
+#bus-direction .bus{
+	border-bottom: 0;
+	display: block;
+	margin: 0;
+	padding-top:1em;
+}
+#bus-direction p{
+	margin: 0;
+}
+
 /* List */
 
 ol {
