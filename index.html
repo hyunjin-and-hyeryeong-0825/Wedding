@@ -49,7 +49,13 @@
 		<section id="banner">
 			<span class="test">
 				<div class="inner">
-					<h2>HYUN JIN <br> ❤<br /> HYE REONG</h2>
+					<!-- <h2>HYUN JIN KIM<br> &<br /> HYE RYEONG LEE</h2> -->
+					<div class="banner-title">
+						<h2 class="upper-banner">HYUN JIN KIM</h2>
+						<h2>&</h2>
+						<h2 class="under-banner">HYE RYEONG LEE</h2>
+					</div>
+
 					<p class="padding">25 / 08 / 2023 11AM
 					</p>
 					<p>SYDENY SAE SOON PRESBYTERIAN CHURCH</p>
@@ -68,8 +74,22 @@
 					<p>이제 하나의 가정을 이룹니다.</p>
 					<p>같은 곳으로 바라보며 함께 걸어가는 부부로서의 첫걸음,</p>
 					<p>이 기쁜 자리에 부디 함께하셔서 축해주시기를 바랍니다.</p>
-
 				</header>
+				<div>
+					<p class="normal">
+						결혼식장
+					</p>
+					<p class="normal">
+						1 Trent Road, North Rocks,NSW 2151
+					</p>
+					<p class="normal">25/08/2023 11AM</p>
+					<p class="normal">
+						점심
+					</p>
+					<p class="normal">
+						새순 식당 / 한식 뷔페 12PM
+					</p>
+				</div>
 				<ul class="actions fit">
 					<li><a href="#two" class="button fit small scrolly">RSVP</a></li>
 					<li><a href="#four" class="button fit small scrolly">GALLERY</a></li>
@@ -85,22 +105,22 @@
 					<h2>RSVP</h2>
 				</header>
 				<div id="RSVPform-box">
-				<form id="RSVPform">
-					<div class="content-body">
-						<label for="name" class="spaceless">NAME / 이름</label>
-						<p class="spaceless"> (영어로 풀네임 부탁드립니다)*</p>
-						<input id="name" name="Name" type="text" placeholder="Name" required="">
-					</div>
-					<div class="content-body">
-						<label for="contact">CONTACT NUMBER / 전화번호 *</label>
-						<input id="contact" name="Contact" type="tel" placeholder="0400000000" pattern="[0-9]{10}"
-							required="">
-					</div>
-					<div class="content-body">
-						<label for="contact">EMAIL / 이메일</label>
-						<input id="contact" type="email" name="Email">
-					</div>
-					<!-- <div class="content-body">
+					<form id="RSVPform" class="visible">
+						<div class="content-body">
+							<label for="name" class="spaceless">NAME / 이름</label>
+							<p class="spaceless"> (영어로 풀네임 부탁드립니다)*</p>
+							<input id="name" name="Name" type="text" placeholder="Name" required="">
+						</div>
+						<div class="content-body">
+							<label for="contact">CONTACT NUMBER / 전화번호 *</label>
+							<input id="contact" name="Contact" type="tel" placeholder="0400000000" pattern="[0-9]{10}"
+								required="">
+						</div>
+						<div class="content-body">
+							<label for="contact">EMAIL / 이메일</label>
+							<input id="contact" type="email" name="Email">
+						</div>
+						<!-- <div class="content-body">
 						<label>참석여부 *</label>
 						<div class="half-space">
 							<input type="radio" id="RSVP_Yes" class="RSVP_Radio" name="RSVP" value="Yes" checked="checked">
@@ -112,47 +132,55 @@
 						</div>
 					</div> -->
 
-					<div class="content-body" id="optional_others">
+						<div class="content-body" id="optional_others">
 
-						<label> Other 	Attendance / 함께 오시는 분</label>
-						<div class="half-space">
-							<input type="radio" id="Others_Yes" name="Optional_Others" class="Others_Radio" value="Yes">
-							<label for="Others_Yes">Yes</label><br>
-						 </div>
-
-	
-						<div class="half-space"> 
-							<input type="radio" id="Others_No" class="Others_Radio" name="Optional_Others" value="No"
-							checked="">
-							<label for="Others_No">No</label><br>
-						</div>
-
-						<div id="others_list" class="content-body" style="display: none;">
-							<div class="content-body">
-								<label>Names of Other Attending / 함께 오시는 분 명단 (영어 풀 네임 부탁드립니다)</label>
-								<label for="others"> </label>
-								<textarea rows="4" cols="50" name="Others" form="RSVPform"></textarea>
+							<label> Other Attendance / 함께 오시는 분</label>
+							<div class="half-space">
+								<input type="radio" id="Others_Yes" name="Optional_Others" class="Others_Radio"
+									value="Yes">
+								<label for="Others_Yes">Yes</label><br>
 							</div>
-							<div class="content-body">
-								<label for="quantity">Number of Other Attending / 총 인원수(작성자 포함)</label>
-								<input type="number" id="quantity" name="Numbers" min="0" max="10">
-							</div>
-						</div>
 
-						<div>
-							<div class="content-body">
-								<label class="spaceless">Food Allergy / 음식 알러지 여부</label>
-								<p class="spaceless">(있으시다면 아래에 적어주세요)</p>
-								<input type="text" id="guest_allergy" name="allergy">
+
+							<div class="half-space">
+								<input type="radio" id="Others_No" class="Others_Radio" name="Optional_Others"
+									value="No" checked="">
+								<label for="Others_No">No</label><br>
+							</div>
+
+							<div id="others_list" class="content-body" style="display: none;">
+								<div class="content-body">
+									<label>Names of Other Attending / 함께 오시는 분 명단 (영어 풀 네임 부탁드립니다)</label>
+									<label for="others"> </label>
+									<textarea rows="4" cols="50" name="Others" form="RSVPform"></textarea>
+								</div>
+								<div class="content-body">
+									<label for="quantity">Number of Other Attending / 총 인원수(작성자 포함)</label>
+									<input type="number" id="quantity" name="Numbers" min="0" max="10">
+								</div>
+							</div>
+
+							<div>
+								<div class="content-body">
+									<label class="spaceless">Food Allergy / 음식 알러지 여부</label>
+									<p class="spaceless">(있으시다면 아래에 적어주세요)</p>
+									<input type="text" id="guest_allergy" name="allergy">
+								</div>
 							</div>
 						</div>
+						<label>* IS MANDATORY FIELD / * 표시는 필수 입력사항입니다</label>
+						<div class="content-body">
+							<button type="submit">Submit</button>
+						</div>
+					</form>
+					<div id="after-form-submit" class="invisible">
+						<h2>
+							FORM SUBMITTED / 폼 작성 완료
+						</h2>
+						<p>Thank you! / 감사합니다!</p>
+						<button id="testing"type="">Try Again / 다시하기</button>
 					</div>
-					<label>* IS MANDATORY FIELD / * 표시는 필수 입력사항입니다</label>
-					<div class="content-body">
-						<button type="submit">Submit</button>
-					</div>
-				</form>
-			</div>
+				</div>
 			</div>
 		</section>
 		<!-- Four -->
@@ -210,26 +238,26 @@
 					<div id="bus-direction">
 						<h3 class="bus-title">Bus / 버스 안내</h3>
 						<h3 class="bus">549</h3>
-							<h4 class="bus">From Epping / 에핑 방면</h4>
-							<p>승차</p>
-							<p>
-								Epping station,Beecroft Rd, Stand E
-							</p>
-							<p>
-								하차
-							</p>
-							<p>North Rocks rd opp Bill Watson Reserve</p>
+						<h4 class="bus">From Epping / 에핑 방면</h4>
+						<p>승차</p>
+						<p>
+							Epping station,Beecroft Rd, Stand E
+						</p>
+						<p>
+							하차
+						</p>
+						<p>North Rocks rd opp Bill Watson Reserve</p>
 
-							<h4 class="bus">From Parramatta / 파라마타 방면</h4>
-							<p>승차</p>
-							<p>
-								Parramatta Interchange- Stand A2
-							</p>
-							<p>
-								하차
-							</p>
-							<p>Bill Watson Reserve, Norths Rocks Rd</p>
-							<h5 class="bus">walk 6 min / 걸어서 6분</h5>
+						<h4 class="bus">From Parramatta / 파라마타 방면</h4>
+						<p>승차</p>
+						<p>
+							Parramatta Interchange- Stand A2
+						</p>
+						<p>
+							하차
+						</p>
+						<p>Bill Watson Reserve, Norths Rocks Rd</p>
+						<h5 class="bus">walk 6 min / 걸어서 6분</h5>
 					</div>
 				</header>
 				<iframe class="googleMap_iframe"
@@ -264,24 +292,31 @@
 	<script src="assets/js/main.js"></script>
 
 	<script>
-        var $form = $('form#RSVPform');
-        var url = 'https://script.google.com/macros/s/AKfycbwAzwB4wbBN1MmqeIc6wfgpmg4rsJDDLL18cvg_xR9c2NLuBEGrvRV6vkWn7yc_ABzXzA/exec'
-        $('#RSVPform').submit(function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: url,
-                method: "POST",
-                data: $form.serialize(),
+		var $form = $('form#RSVPform');
+		var url = 'https://script.google.com/macros/s/AKfycbwAzwB4wbBN1MmqeIc6wfgpmg4rsJDDLL18cvg_xR9c2NLuBEGrvRV6vkWn7yc_ABzXzA/exec'
+		$('#RSVPform').submit(function (e) {
+			e.preventDefault();
+			$.ajax({
+				url: url,
+				method: "POST",
+				data: $form.serialize(),
 
-                success: function (result) {
-                    console.log(result);
-                    window.location = '#form-submitted'
-                },
+				success: function (result) {
+					console.log(result);
+					$('#RSVPform').toggle('slow');
+					$('#after-form-submit').toggle('slow');
+				},
 
-            });
-        });
-    </script>
-    <!-- <script>
+			});
+
+		});
+
+		$('#testing').click(function(){
+			$('#RSVPform').toggle('slow');
+			$('#after-form-submit').toggle('slow');
+		});
+	</script>
+	<!-- <script>
         let slideIndex = 1;
 showSlides(slideIndex);
 

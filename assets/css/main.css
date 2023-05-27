@@ -2653,6 +2653,10 @@ input[type="button"]:hover,
 button:hover,
 .button:hover {
 	background-color: rgba(144, 144, 144, 0.25);
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 input[type="submit"]:active,
@@ -3833,20 +3837,66 @@ body.is-menu-visible #menu {
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-	transition: transform 0.5s ease, opacity 0.5s ease;
-	display: inline-block;
+	-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease !important;
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease !important;
+	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease !important;
+	transition: transform 0.5s ease, opacity 0.5s ease !important;
+	display: block;
 	font-size: 1.75em;
 	opacity: 1;
-	padding: 0.35em 1em;
+	padding: 0.1em 1em;
 	position: relative;
 	z-index: 1;
+	margin: 0;
 	/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
-#banner h2:before,
+#RSVPform-box button:hover{
+	background-color: #b4ad9f;
+}
+
+#banner h2.upper-banner:before{
+	-moz-transition: width 0.85s ease;
+	-webkit-transition: width 0.85s ease;
+	-ms-transition: width 0.85s ease;
+	transition: width 0.85s ease;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	background: #fff;
+	padding: 1px;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+}
+
+#banner h2.under-banner:after{
+	-moz-transition: width 0.85s ease;
+	-webkit-transition: width 0.85s ease;
+	-ms-transition: width 0.85s ease;
+	transition: width 0.85s ease;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	background: #fff;
+	padding: 1px;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+}
+
+.normal{
+	color: #b4ad9f;
+    margin-bottom: 0.5em;
+}
+
+/* #banner h2:before,
 #banner h2:after {
 	-moz-transition: width 0.85s ease;
 	-webkit-transition: width 0.85s ease;
@@ -3863,8 +3913,8 @@ body.is-menu-visible #menu {
 	height: 2px;
 	position: absolute;
 	width: 100%;
-	/* border: 1px solid black; */
-}
+
+} */
 
 #banner h2:before {
 	top: 0;
@@ -4284,4 +4334,13 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
+}
+
+.visible
+{
+	display: block;
+}
+
+.invisible{
+	display: none;
 }
