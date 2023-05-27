@@ -79,5 +79,20 @@
 			});
 
 		}
+				//others_list
+
+				$(document).ready(function () {
+					$(".RSVP_Radio").change(function () {
+						$("[id^=optional_others]").toggle(this.value == 'Yes');
+					});
+				});
+	
+	
+				$(document).ready(function () {
+					$("[id^=others_list]").hide();
+					$(".Others_Radio").change(function () {
+						$("[id^=others_list]").toggle(this.value == 'Yes');
+					});
+				});
 
 })(jQuery);

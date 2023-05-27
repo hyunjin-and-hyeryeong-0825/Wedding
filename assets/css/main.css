@@ -297,6 +297,7 @@ h1 {
 	font-size: 2em;
 	line-height: 1.75em;
 }
+
 @media screen and (max-width: 736px) {
 
 	h1 {
@@ -1962,12 +1963,15 @@ label {
 	display: block;
 	font-size: 0.9em;
 	font-weight: 600;
-	margin: 0 0 1em 0;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="number"],
 select,
 textarea {
 	-moz-appearance: none;
@@ -1988,6 +1992,8 @@ textarea {
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="number"],
 select:invalid,
 textarea:invalid {
 	box-shadow: none;
@@ -1996,9 +2002,12 @@ textarea:invalid {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
 select:focus,
 textarea:focus {
-	box-shadow: 0 0 0 2px #21b2a6;
+	box-shadow: 0 0 0 2px #fcfcfb;
+	transition: box-shadow 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 select {
@@ -2021,6 +2030,8 @@ select::-ms-expand {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="tel"],
+input[type="number"],
 select {
 	height: 2.75em;
 }
@@ -2095,7 +2106,8 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	box-shadow: 0 0 0 2px #21b2a6;
+	box-shadow: 0 0 0 2px #fcfcfb;
+	transition: box-shadow 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 input[type="checkbox"]+label:before {
@@ -2285,23 +2297,53 @@ input[type="radio"]+label:before {
 	object-fit: contain;
 }
 
-.googleMap_iframe{
+.googleMap_iframe {
 	width: 100%;
 	height: 30em;
 }
 
-#bus-direction{
-	border: 1px solid white;
+#bus-direction {
+	border: 1px solid #fcfcfb;
 }
 
-#bus-direction .bus{
+#bus-direction .bus {
 	border-bottom: 0;
 	display: block;
 	margin: 0;
-	padding-top:1em;
+	padding-top: 1em;
 }
-#bus-direction p{
+
+#bus-direction p {
 	margin: 0;
+}
+.spaceless{
+	border:0;
+	margin:0;
+	padding:0;
+	text-align: left;
+}
+
+.content-body{
+	margin: 1em 0 0 0;
+}
+
+.half-space{
+	width: 40%;
+	display:inline-block;
+}
+
+#RSVPform-box{
+	border: 1px solid #fcfcfb;
+	padding: 3em;
+}
+
+#RSVPform-box input[type="text"],input[type="tel"],input[type="number"]{
+	display: block;
+    outline: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+    width: 100%;
+	border-radius: 4px;
 }
 
 /* List */
@@ -3021,7 +3063,7 @@ button:disabled,
 
 .wrapper.style1 header p {
 	color: #b4ad9f;
-	font-size:1.35em;
+	font-size: 1.35em;
 }
 
 .wrapper.style1 header.major h2,
@@ -3550,7 +3592,7 @@ button:disabled,
 	transform: translateX(20em);
 	-moz-transition: -moz-transform 0.5s ease;
 	-webkit-transition: -webkit-transform 0.5s ease;
-	-ms-	: -ms-transform 0.5s ease;
+	-ms-: -ms-transform 0.5s ease;
 	transition: transform 0.5s ease;
 	-webkit-overflow-scrolling: touch;
 	background: #21b2a6;
@@ -3801,7 +3843,7 @@ body.is-menu-visible #menu {
 	padding: 0.35em 1em;
 	position: relative;
 	z-index: 1;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 #banner h2:before,
@@ -3815,13 +3857,13 @@ body.is-menu-visible #menu {
 	-ms-transition-delay: 0.25s;
 	transition-delay: 0.25s;
 	background: #fff;
-	padding :1px;
+	padding: 1px;
 	content: '';
 	display: block;
 	height: 2px;
 	position: absolute;
 	width: 100%;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 #banner h2:before {
@@ -3832,7 +3874,7 @@ body.is-menu-visible #menu {
 #banner h2:after {
 	bottom: 0;
 	right: 0;
-	
+
 }
 
 #banner p {
@@ -3850,7 +3892,7 @@ body.is-menu-visible #menu {
 
 }
 
-#banner .padding{
+#banner .padding {
 	padding-top: 15em;
 
 }
@@ -4210,7 +4252,7 @@ body.landing #page-wrapper {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5	)), url("../../images/wedding_5.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -4231,12 +4273,12 @@ body.is-mobile.landing .wrapper.style4 {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/wedding_5.jpg");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.021), rgba(0, 0, 0, 0.021)), url("../../images/wedding_5.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.021), rgba(0,0,0,0.021)), url("../../images/wedding_5.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.021), rgba(0, 0, 0, 0.021)), url("../../images/wedding_5.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 1;
-	
+
 }
 
 
