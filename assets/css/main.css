@@ -4052,7 +4052,7 @@ body.is-menu-visible #menu {
 	}
 
 	#two{
-		height: 100vh;
+		height: auto;
 		min-height: 0;
 	}
 }
