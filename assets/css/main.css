@@ -3830,6 +3830,7 @@ body.is-menu-visible #menu {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+	padding : 0 25%
 }
 
 #banner h2 {
@@ -4028,7 +4029,7 @@ body.is-menu-visible #menu {
 
 	#banner {
 		padding: 7em 3em 5em 3em;
-		height: auto;
+		height: 100vh;
 		min-height: 0;
 	}
 
@@ -4044,6 +4045,16 @@ body.is-menu-visible #menu {
 		display: none;
 	}
 
+	#one{
+		padding: 7em 3em 5em 3em;
+		height: 100vh;
+		min-height: 0;
+	}
+
+	#two{
+		height: 100vh;
+		min-height: 0;
+	}
 }
 
 body.is-preload #banner h2 {
